@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    padding: 15px 40px;
+    font-weight: bolder;
+}
+.container:last-child{
+    border: none;
+}
+.image{
+    width: 30px;
+}
+
+.name{
+    color: #333333;
+    text-align: left;
+    font-weight: bold;
+    margin-left: 15px;
+    width: 140px;
+    font-size: 14px;
+}
+.symbol,.price{
+    text-align: left;
+    width: 100px;
+}
+.greenPriceChange,
+.redPriceChange{
+    width: 50px;
+    margin-right: 25px;
+}
+
+.greenPriceChange{
+    color: green;
+    background-color: rgba(0, 255, 0, 0.175);
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+.redPriceChange{
+    color: red;
+    background-color: rgba(255, 0, 0, 0.175);
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 670px){
+   .name{
+       margin-left: 5px;
+   }
+    .container{
+        padding: 15px 5px;
+    }
+    .greenPriceChange,
+    .redPriceChange{
+        width: 35px;
+    }
+}
+@media screen and (max-width: 500px){
+    .name{
+        font-size: 12px;
+    }
+    .container{
+        font-size: 10px;
+    }
+}
