@@ -35,8 +35,7 @@ const Landing = () => {
 
     return (
         <>
-            {
-                coins.length ?
+
                     <div className={styled.main}>
                         <div className={styled.Container}>
                             <h2 className={styled.title}>Coins</h2>
@@ -75,9 +74,7 @@ const Landing = () => {
                             </div>
                         </div>
                     </div>
-                    :
-                    <Loader/>
-            }
+
         </>
     );
 }
